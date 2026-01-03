@@ -86,11 +86,11 @@ export function PitchDeck() {
         </AnimatePresence>
       </div>
 
-      <div className="fixed bottom-24 left-0 right-0 z-40 px-6">
+      {/* <div className="fixed bottom-24 left-0 right-0 z-40 px-6">
         <div className="max-w-6xl mx-auto">
           <Footer activeId={activeDocId} onChange={handleDocChange} />
         </div>
-      </div>
+      </div> */}
 
       <Navigation currentSlide={currentSlide} totalSlides={slides.length} onNext={handleNext} onPrev={handlePrev} />
     </div>;
