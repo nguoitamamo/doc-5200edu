@@ -17,6 +17,7 @@ import { Slide10Market } from '../components/slides/Slide10Market';
 import { Slide11Positioning } from '../components/slides/Slide11Positioning';
 import { Slide12Costs } from '../components/slides/Slide12Costs';
 import { Slide13CostBreakdown } from '../components/slides/Slide13CostBreakdown';
+import { Slide13_1PaymentPlan } from '../components/slides/Slide13_1PaymentPlan';
 import { Slide14WhyLean } from '../components/slides/Slide14WhyLean';
 import { Slide15FundraisingObjective } from '../components/slides/Slide15FundraisingObjective';
 import { Slide16FundraisingStage } from '../components/slides/Slide16FundraisingStage';
@@ -29,7 +30,7 @@ import { Slide22Efficiency } from '../components/slides/Slide22Efficiency';
 import { Slide23Risks } from '../components/slides/Slide23Risks';
 import { Slide24Optionality } from '../components/slides/Slide24Optionality';
 import { Slide25Closing } from '../components/slides/Slide25Closing';
-const slides = [Slide01Cover, Slide02Problem, Slide03Insight, Slide04Solution, Slide05Differentiation, Slide06TargetUsers, Slide07ProductOverview, Slide08WhyNow, Slide09Vision, Slide10Market, Slide11Positioning, Slide12Costs, Slide13CostBreakdown, Slide14WhyLean, Slide15FundraisingObjective, Slide16FundraisingStage, Slide17CapitalAsk, Slide18Allocation, Slide19Milestones, Slide20Metrics, Slide21NextRound, Slide22Efficiency, Slide23Risks, Slide24Optionality, Slide25Closing];
+const slides = [Slide01Cover, Slide02Problem, Slide03Insight, Slide04Solution, Slide05Differentiation, Slide06TargetUsers, Slide07ProductOverview, Slide08WhyNow, Slide09Vision, Slide10Market, Slide11Positioning, Slide12Costs, Slide13CostBreakdown, Slide13_1PaymentPlan, Slide14WhyLean, Slide15FundraisingObjective, Slide16FundraisingStage, Slide17CapitalAsk, Slide18Allocation, Slide19Milestones, Slide20Metrics, Slide21NextRound, Slide22Efficiency, Slide23Risks, Slide24Optionality, Slide25Closing];
 export function PitchDeck() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [direction, setDirection] = useState(0);
@@ -86,11 +87,7 @@ export function PitchDeck() {
         </AnimatePresence>
       </div>
 
-      {/* <div className="fixed bottom-24 left-0 right-0 z-40 px-6">
-        <div className="max-w-6xl mx-auto">
-          <Footer activeId={activeDocId} onChange={handleDocChange} />
-        </div>
-      </div> */}
+
 
       <Navigation currentSlide={currentSlide} totalSlides={slides.length} onNext={handleNext} onPrev={handlePrev} />
     </div>;
